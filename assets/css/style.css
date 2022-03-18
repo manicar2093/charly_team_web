@@ -926,6 +926,8 @@ section {
 .member .member-img {
   position: relative;
   overflow: hidden;
+  max-width: 600px;
+  margin: 5px;
 }
 .member .social {
   position: absolute;
