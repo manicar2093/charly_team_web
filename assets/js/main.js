@@ -172,6 +172,16 @@
     },
   });
 
+  new Swiper(".coach-picts-slider", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  })
+
   /**
    * Scroll with ofset on page load with hash links in the url
    */
