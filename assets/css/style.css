@@ -531,7 +531,7 @@ section {
   line-height: 28px;
   margin-bottom: 0;
 }
-.services .icon-box:hover .title a, .services .icon-box:hover .description {
+.services .icon-box:hover .title, .services .icon-box:hover .description {
   color: #fff;
 }
 .services .icon-box:hover .icon i {
