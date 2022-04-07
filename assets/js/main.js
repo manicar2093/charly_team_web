@@ -166,10 +166,6 @@
       disableOnInteraction: false,
     },
     loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
   });
 
   new Swiper(".coach-picts-slider", {
