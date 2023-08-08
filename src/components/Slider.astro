@@ -1,0 +1,38 @@
+---
+interface SliceItem {
+  imgSrc: string;
+  imgAlt: string;
+  memberInfo: string
+}
+interface Props {
+  sliceName: string;
+  items: Array<SliceItem>;
+}
+
+const { items, sliceName } = Astro.props;
+---
+
+<div class:list={["swiper", `${sliceName}-slider`]} >
+  <div class="swiper-wrapper">
+    {
+      items.map((item) => (
+        <div class="swiper-slide">
+          <div class="d-flex align-items-stretch justify-content-center">
+            <div class="member">
+              <div class="member-img">
+                <img src={item.imgSrc} class="img-fluid" alt={item.imgAlt} />
+              </div>
+              {item.memberInfo && (
+                    <div class="member-info">
+                        <p>
+                         {item.memberInfo}
+                        </p>
+                    </div>
+                )}
+            </div>  
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</div>

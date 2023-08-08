@@ -1,0 +1,35 @@
+---
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Footer from "../components/Footer.astro";
+import Head from "../components/Head.astro";
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <Head />
+
+  <body>
+    <Header />
+    <Hero />
+    <main id="main">
+        <slot/>
+    </main>
+    <!-- End #main -->
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i></a
+    >
+    <Footer />
+    <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" is:inline
+    ></script>
+    <script src="/assets/vendor/glightbox/js/glightbox.min.js" is:inline
+    ></script>
+    <script src="/assets/vendor/swiper/swiper-bundle.min.js" is:inline></script>
+
+    <!-- Template Main JS File -->
+    <script src="/assets/js/main.js" is:inline></script>
+  </body><!-- End Services Section --><!-- Vendor JS Files -->
+</html>

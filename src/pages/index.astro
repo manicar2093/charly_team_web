@@ -1,0 +1,133 @@
+---
+import SectionTitle from "../components/SectionTitle.astro";
+import Service from "../components/Service.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Slider from "../components/Slider.astro";
+import Footer from "../components/Footer.astro";
+import FAQ from "../components/FAQ.astro";
+import Layout from "../layouts/Layout.astro";
+
+import { services } from "../data/services";
+import { coachSliderItems } from "../data/coachImages";
+import { successStoriesSliceItems } from "../data/successStoriesImages";
+import { celebritySlidirImages } from "../data/celebritySliderImages";
+---
+
+<Layout>
+  <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <div class="container">
+      <SectionTitle
+        title="Servicios"
+        subtitle="Iniciemos con tu cambio"
+        paragraph="Todo lo necesario para lograr tu objetivo"
+      />
+      <div class="row">
+        {
+          services.map((item) => (
+            <Service
+              title={item.title}
+              icon={item.icon}
+              description={item.description}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </section>
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <SectionTitle
+        title="Nosotros"
+        subtitle="Conoce a nuestro embajador Charly Campos"
+        paragraph="Todo lo necesario para lograr tu objetivo"
+      />
+
+      <div class="row content">
+        <div class="col-lg-6">
+          <Slider items={coachSliderItems} sliceName="coach-picts" />
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0 flex-p">
+          <p>
+            Al igual que tú yo <span class="fw-bold">amo mi vida</span> y <span
+              class="fw-bold">cuido mi salud</span
+            >. Me gusta el deporte y el estilo de vida en torno a él.
+          </p>
+          <p>
+            Desde que comenze este proyecto la <span class="fw-bold"
+              >actividad física</span
+            > y la <span class="fw-bold">buena alimentación</span> han sido mis motores
+            e inspiración para dar mis mejores pasos cada vez con mayor fuerza y
+            siempre apuntando al próximo reto. Me gusta encontrarme y convivir con
+            personas que tienen buenos deseos, pasión, entrega y que quieren darle
+            un cambio saludable a su vida, es por ello que yo, <span
+              class="fw-bold">tu amigo Charly Campos,</span
+            > te doy la más cordial bienvenida a <span class="fw-bold"
+              >la familia del #CharlyTeam</span
+            >.
+          </p>
+          <p class="fw-bold w-100 mb-1">
+            Entrenador y preparador físico para la salud
+          </p>
+          <p class="fw-bold">(CedProf 14610)</p>
+        </div>
+      </div>
+    </div>
+  </section><!-- End About Section -->
+
+  <!-- ======= Cta Section ======= -->
+  <section id="cta" class="cta">
+    <div class="container">
+      <div class="text-center">
+        <h3>Somos #CharlyTeam</h3>
+        <p class="fst-italic">
+          Somos un equipo que nos gusta la actividad física, la buena
+          alimentación y que no deja de luchar por alcanzar sus sueños. Podemos
+          caernos pero también sabemos levantarnos y vivir con pasión día a día.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- End Cta Section -->
+
+  <!-- ======= Success-stories Section ======= -->
+  <section id="success-stories" class="success-stories">
+    <div class="container">
+      <SectionTitle
+        title="Historias de Éxito"
+        subtitle="Muchos ya lo han Logrado"
+        paragraph="¡Esfuerzate y lo lograras!"
+      />
+
+      <div class="row">
+        <Slider items={successStoriesSliceItems} sliceName="success-stories" />
+      </div>
+    </div>
+  </section><!-- End Success-stories Section -->
+
+  <section id="celebrity-gallery" class="celebrity-gallery">
+    <div class="container">
+      <SectionTitle
+        title="Galería de Famosos"
+        subtitle="Las celebridades que nos Acompañan"
+        paragraph="¡Siempre presentes!"
+      />
+
+      <div class="row">
+        <Slider items={celebritySlidirImages} sliceName="success-stories" />
+      </div>
+    </div>
+  </section><!-- End Success-stories Section -->
+
+  <!-- ======= F.A.Q Section ======= -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <SectionTitle title="F.A.Q" subtitle="Preguntas Frecuentes" />
+      <FAQ />
+    </div>
+  </section><!-- End F.A.Q Section -->
+
+</Layout>
+<!-- End #main -->
