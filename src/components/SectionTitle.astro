@@ -1,15 +1,23 @@
 ---
 interface Props {
     title: string
+    onBlue: string | null
     subtitle: string
-    paragraph: string
+    paragraph: string | null
 }
 
-const {title, subtitle, paragraph} = Astro.props;
+const {title, onBlue, subtitle, paragraph} = Astro.props;
 ---
 
 <div class="section-title">
-    <h2>{title}</h2>
-    <h3>{subtitle}</h3>
-    <p>{paragraph}</p>
+    <h2>
+        {title}
+    </h2>
+    <h3>{subtitle}
+    {onBlue && (
+        <span>{onBlue}</span>
+    )}</h3>
+    {paragraph && (
+        <p>{paragraph}</p>
+    )}
 </div>
