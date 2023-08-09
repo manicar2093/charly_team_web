@@ -20,7 +20,8 @@ import { celebritySlidirImages } from "../data/celebritySliderImages";
     <div class="container">
       <SectionTitle
         title="Servicios"
-        subtitle="Iniciemos con tu cambio"
+        subtitle="Iniciemos tu"
+        onBlue="CAMBIO"
         paragraph="Todo lo necesario para lograr tu objetivo"
       />
       <div class="row">
@@ -41,8 +42,9 @@ import { celebritySlidirImages } from "../data/celebritySliderImages";
     <div class="container">
       <SectionTitle
         title="Nosotros"
-        subtitle="Conoce a nuestro embajador Charly Campos"
-        paragraph="Todo lo necesario para lograr tu objetivo"
+        subtitle="Conoce a nuestro embajador"
+        onBlue="CHARLY CAMPOS"
+        paragraph="¡Él te llevará al éxito!"
       />
 
       <div class="row content">
@@ -97,7 +99,8 @@ import { celebritySlidirImages } from "../data/celebritySliderImages";
     <div class="container">
       <SectionTitle
         title="Historias de Éxito"
-        subtitle="Muchos ya lo han Logrado"
+        subtitle="Muchos ya lo han"
+        onBlue="Logrado"
         paragraph="¡Esfuerzate y lo lograras!"
       />
 
@@ -111,7 +114,8 @@ import { celebritySlidirImages } from "../data/celebritySliderImages";
     <div class="container">
       <SectionTitle
         title="Galería de Famosos"
-        subtitle="Las celebridades que nos Acompañan"
+        subtitle="Las celebridades que nos"
+        onBlue="acompañan"
         paragraph="¡Siempre presentes!"
       />
 
@@ -124,7 +128,7 @@ import { celebritySlidirImages } from "../data/celebritySliderImages";
   <!-- ======= F.A.Q Section ======= -->
   <section id="faq" class="faq">
     <div class="container">
-      <SectionTitle title="F.A.Q" subtitle="Preguntas Frecuentes" />
+      <SectionTitle title="F.A.Q" onBlue={null} subtitle="Preguntas Frecuentes" paragraph={null}/>
       <FAQ />
     </div>
   </section><!-- End F.A.Q Section -->
