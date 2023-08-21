@@ -1,10 +1,7 @@
 ---
 import SectionTitle from "../components/SectionTitle.astro";
 import Service from "../components/Service.astro";
-import Header from "../components/Header.astro";
-import Hero from "../components/Hero.astro";
 import Slider from "../components/Slider.astro";
-import Footer from "../components/Footer.astro";
 import FAQ from "../components/FAQ.astro";
 import Layout from "../layouts/Layout.astro";
 
@@ -12,10 +9,10 @@ import { services } from "../data/services";
 import { coachSliderItems } from "../data/coachImages";
 import { successStoriesSliceItems } from "../data/successStoriesImages";
 import { celebritySlidirImages } from "../data/celebritySliderImages";
+import { officialProducts } from "../data/officialProducts";
 ---
 
 <Layout>
-  <!-- ======= Services Section ======= -->
   <section id="services" class="services">
     <div class="container">
       <SectionTitle
@@ -37,7 +34,6 @@ import { celebritySlidirImages } from "../data/celebritySliderImages";
       </div>
     </div>
   </section>
-  <!-- ======= About Section ======= -->
   <section id="about" class="about">
     <div class="container">
       <SectionTitle
@@ -77,9 +73,8 @@ import { celebritySlidirImages } from "../data/celebritySliderImages";
         </div>
       </div>
     </div>
-  </section><!-- End About Section -->
+  </section>
 
-  <!-- ======= Cta Section ======= -->
   <section id="cta" class="cta">
     <div class="container">
       <div class="text-center">
@@ -92,9 +87,7 @@ import { celebritySlidirImages } from "../data/celebritySliderImages";
       </div>
     </div>
   </section>
-  <!-- End Cta Section -->
 
-  <!-- ======= Success-stories Section ======= -->
   <section id="success-stories" class="success-stories">
     <div class="container">
       <SectionTitle
@@ -108,7 +101,22 @@ import { celebritySlidirImages } from "../data/celebritySliderImages";
         <Slider items={successStoriesSliceItems} sliceName="success-stories" />
       </div>
     </div>
-  </section><!-- End Success-stories Section -->
+  </section>
+
+  <section id="official-products" class="official-products">
+    <div class="container">
+      <SectionTitle
+        title="Productos #CharlyTeam"
+        subtitle="Nos expandemos para ofrecerte lo"
+        onBlue="Mejor"
+        paragraph="¡Los mejores suplementos a tu alzance! ¡De venta en redes sociales!"
+      />
+
+      <div class="row">
+        <Slider items={officialProducts} sliceName="official-products" />
+      </div>
+    </div>
+  </section>
 
   <section id="celebrity-gallery" class="celebrity-gallery">
     <div class="container">
@@ -123,15 +131,13 @@ import { celebritySlidirImages } from "../data/celebritySliderImages";
         <Slider items={celebritySlidirImages} sliceName="success-stories" />
       </div>
     </div>
-  </section><!-- End Success-stories Section -->
+  </section>
 
-  <!-- ======= F.A.Q Section ======= -->
   <section id="faq" class="faq">
     <div class="container">
       <SectionTitle title="F.A.Q" onBlue={null} subtitle="Preguntas Frecuentes" paragraph={null}/>
       <FAQ />
     </div>
-  </section><!-- End F.A.Q Section -->
+  </section>
 
 </Layout>
-<!-- End #main -->

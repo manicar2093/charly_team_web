@@ -34,7 +34,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -148,7 +148,7 @@
   }, true)
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
@@ -169,6 +169,16 @@
   });
 
   new Swiper(".coach-picts-slider", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    loop: true,
+  })
+
+  new Swiper(".official-products-slider", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
