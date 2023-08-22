@@ -667,7 +667,7 @@ section {
 }
 
 .img-fluid {
-  height: 700px;
+  max-height: 700px;
 }
 
 .member .social {
