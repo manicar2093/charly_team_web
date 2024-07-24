@@ -35,11 +35,6 @@ export const successStoriesSliceItems = [
         memberInfo: "Me he dado la oportunidad de mejorar mi estilo de vida y ha sido genial. Paso a paso voy viendo cambios y deseo llegar a mi objetivo."
     },
     {
-        imgSrc: "assets/img/success_stories/success_8.jpg",
-        imgAlt: "",
-        memberInfo: "Compromiso. Dedicación. Son cosas que he aprendido y aplicado para mejorar mi salud. Los resultados hablan por si mismos."
-    },
-    {
         imgSrc: "assets/img/success_stories/success_9.jpg",
         imgAlt: "",
         memberInfo: "¡Cada día que pasa me siento como nueva! ¡Gracías, #CharlyTeam!"
