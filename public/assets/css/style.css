@@ -362,13 +362,12 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   padding: 8px 30px 9px 30px;
   border-radius: var(--border-radius);
-  transition: 0.5s;
-  border: 2px solid #fff;
+  background: var(--primary);
   color: #fff;
+  transition: 0.5s;
 }
 #hero .btn-get-started:hover {
-  background: var(--primary);
-  border: 2px solid var(--primary);
+  scale: 1.1;
 }
 
 @media (max-width: 768px) {
