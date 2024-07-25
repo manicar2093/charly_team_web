@@ -49,5 +49,23 @@ export const successStoriesSliceItems = [
         imgAlt: "",
         memberInfo: "Tenía temor de ser asesorado por qué los antecedes de salud en mi familia no son buenos. #CharlyTeam me inspiro y hoy en un mes de trabajo me siento más vivo que nunca."
     },
-
+    {
+        imgSrc: "assets/img/success_stories/success_12.jpg",
+        imgAlt: "",
+        memberInfo: "Luché por años con mi peso, probé dietas y ejercicios sin éxito. Todo cambió cuando conocí a #CharlyTeam. Su apoyo y guía transformaron mi vida. Ahora, no solo alcancé mi meta, sino que soy más feliz y saludable."
+    },
+    {
+        imgSrc: "assets/img/success_stories/success_13.jpg",
+        imgAlt: "",
+        memberInfo: "Siempre intenté ganar músculo sin éxito. Probé de todo, pero nada funcionaba. Entonces conocí a #CharlyTeam, quien me enseñó a entrenar y alimentarme correctamente. Gracias a su apoyo, ahora estoy más fuerte y saludable que nunca."
+    },
+    {
+        imgSrc: "assets/img/success_stories/success_14.jpg",
+        imgAlt: "",
+        memberInfo: "Durante años, mi autoestima era baja debido a mi peso. Al conocer a #CharlyTeam, aprendí a cuidarme. Con su apoyo, logré bajar de peso y, lo más importante, gané confianza en mí misma. Ahora, me siento increíblemente segura y feliz."
+    },{
+        imgSrc: "assets/img/success_stories/success_15.jpg",
+        imgAlt: "",
+        memberInfo: "Siempre tuve sobrepeso y mi autoestima sufría. Al conocer a #CharlyTeam, todo cambió. Con su guía y apoyo, aprendí a amarme a mí mismo y a cuidar de mi cuerpo. Ahora, no solo perdí peso, sino que gané confianza y felicidad."
+    },
 ]
