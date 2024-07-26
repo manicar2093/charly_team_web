@@ -10,6 +10,7 @@ import { coachSliderItems } from "../data/coachImages";
 import { successStoriesSliceItems } from "../data/successStoriesImages";
 import { celebritySlidirImages } from "../data/celebritySliderImages";
 import { officialProducts } from "../data/officialProducts";
+import { officialClothes } from "../data/officialClothes";
 ---
 
 <Layout>
@@ -110,11 +111,16 @@ import { officialProducts } from "../data/officialProducts";
         title="Productos #CharlyTeam"
         subtitle="Nos expandemos para ofrecerte lo"
         onBlue="Mejor"
-        paragraph="¡Los mejores suplementos a tu alcance! ¡De venta en redes sociales!"
+        paragraph="¡Los mejores suplementos, accesorios y ropa a tu alcance! ¡De venta en redes sociales!"
       />
 
       <div class="row">
-        <Slider items={officialProducts} sliceName="official-products" />
+        <div class="col-12">
+          <Slider items={officialProducts} sliceName="official-products" />
+        </div>
+        <div class="col-12">
+          <Slider items={officialClothes} sliceName="official-products" />
+        </div>
       </div>
     </div>
   </section>
