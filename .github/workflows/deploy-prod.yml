@@ -1,0 +1,32 @@
+name: Bump Version
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: "Deploy to development stage"
+    steps:
+      - name: Check out
+        uses: actions/checkout@v2
+        with:
+          token: "${{ secrets.PERSONAL_ACCESS_TOKEN }}"
+          fetch-depth: 0
+      - name: Set up NodeJS
+        uses: actions/setup-node@v1
+        with:
+          node-version: 18.x
+      - name: Install deps
+        run: npm install
+      - name: Build page
+        run: npm run build
+      - name: Load to S3 prod
+        run: aws s3 sync ./dist s3://$BUCKET_NAME
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.PROD_AWS_REGION }}
+          BUCKET_NAME: ${{ secrets.PROD_BUCKET_NAME }}
