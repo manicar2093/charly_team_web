@@ -1,3 +1,5 @@
+
+
 export const celebritySlidirImages = [
     {
         imgSrc: "assets/img/celebrities/celebrity_1.jpg",
@@ -60,11 +62,6 @@ export const celebritySlidirImages = [
         memberInfo: "Carlos Bravo (Periodista grupo Distinción)"
     },
     {
-        imgSrc: "assets/img/celebrities/celebrity_13.jpg",
-        imgAlt: "",
-        memberInfo: "Santiago Taboada (Alcalde de la delegación Benito Juárez Ciudad de México)"
-    },
-    {
         imgSrc: "assets/img/celebrities/celebrity_14.jpg",
         imgAlt: "",
         memberInfo: "Alvin Mendoza y Jagger Martínez (Ex Jugadores Profesionales de fútbol y canteranos del club America)"
@@ -74,5 +71,116 @@ export const celebritySlidirImages = [
         imgAlt: "",
         memberInfo: "Reinaldo Navia (Ex Jugador profesional del Club America)"
     },
-    
+    {
+        imgSrc: "assets/img/celebrities/celebrity_16.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_17.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_18.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_19.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_20.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_21.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_22.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_23.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_24.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_59.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_26.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_27.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_29.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_30.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_31.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_32.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_33.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_34.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_35.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_36.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_37.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_38.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_39.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_40.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_41.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_42.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_43.jpg",
+        imgAlt: "",
+    },
+    {
+        imgSrc: "assets/img/celebrities/celebrity_44.jpg",
+        imgAlt: "",
+    },
 ]
