@@ -57,11 +57,6 @@ export const celebritySlidirImages = [
         memberInfo: "Dr. Alfredo Chi (Científico de Pfizer)"
     },
     {
-        imgSrc: "assets/img/celebrities/celebrity_12.jpg",
-        imgAlt: "",
-        memberInfo: "Carlos Bravo (Periodista grupo Distinción)"
-    },
-    {
         imgSrc: "assets/img/celebrities/celebrity_14.jpg",
         imgAlt: "",
         memberInfo: "Alvin Mendoza y Jagger Martínez (Ex Jugadores Profesionales de fútbol y canteranos del club America)"
