@@ -14,6 +14,21 @@ import GridPhotos from "../components/GridPhotos.astro";
 ---
 
 <Layout>
+  <section id="success-stories" class="success-stories">
+    <div class="container">
+      <SectionTitle
+          title="Historias de Éxito"
+          subtitle="Muchos ya lo han"
+          onBlue="Logrado"
+          paragraph="¡Esfuerzate y lo lograras!"
+      />
+
+      <div class="row">
+        <Slider items={successStoriesSliceItems} sliceName="success-stories" />
+      </div>
+    </div>
+  </section>
+
   <section id="services" class="services">
     <div class="container">
       <SectionTitle
@@ -79,34 +94,6 @@ import GridPhotos from "../components/GridPhotos.astro";
     </div>
   </section>
 
-  <section id="cta" class="cta">
-    <div class="container">
-      <div class="text-center">
-        <h3>Somos #CharlyTeam</h3>
-        <p class="fst-italic">
-          Somos un equipo que nos gusta la actividad física, la buena
-          alimentación y que no deja de luchar por alcanzar sus sueños. Podemos
-          caernos pero también sabemos levantarnos y vivir con pasión día a día.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="success-stories" class="success-stories">
-    <div class="container">
-      <SectionTitle
-        title="Historias de Éxito"
-        subtitle="Muchos ya lo han"
-        onBlue="Logrado"
-        paragraph="¡Esfuerzate y lo lograras!"
-      />
-
-      <div class="row">
-        <Slider items={successStoriesSliceItems} sliceName="success-stories" />
-      </div>
-    </div>
-  </section>
-
   <section id="official-products" class="official-products">
     <div class="container">
       <SectionTitle
@@ -123,6 +110,19 @@ import GridPhotos from "../components/GridPhotos.astro";
         <div class="col-12">
           <Slider items={officialClothes} sliceName="official-products" />
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta" class="cta">
+    <div class="container">
+      <div class="text-center">
+        <h3>Somos #CharlyTeam</h3>
+        <p class="fst-italic">
+          Somos un equipo que nos gusta la actividad física, la buena
+          alimentación y que no deja de luchar por alcanzar sus sueños. Podemos
+          caernos pero también sabemos levantarnos y vivir con pasión día a día.
+        </p>
       </div>
     </div>
   </section>
