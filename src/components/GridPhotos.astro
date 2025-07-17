@@ -15,12 +15,12 @@ const { items, gridName } = Astro.props;
             <div class="gallery-image" data-image-gallery-dialog-id=`${index}`>
                 <img src={item.imgSrc} class="img-fluid" alt={item.imgAlt} />
             </div>
-            <dialog id=`grid-${index}-dialog`>
-                <form method="dialog">
-                    <button class="close-dialog" autofocus>x</button>
-                </form>
-                <img src={item.imgSrc} class="img-fluid" alt={item.imgAlt}/>
-            </dialog>
+            <!--<dialog id=`grid-${index}-dialog`>-->
+            <!--    <form method="dialog">-->
+            <!--        <button class="close-dialog" autofocus>x</button>-->
+            <!--    </form>-->
+            <!--    <img src={item.imgSrc} class="img-fluid" alt={item.imgAlt}/>-->
+            <!--</dialog>-->
         ))
     }
 </div>
@@ -70,14 +70,15 @@ const { items, gridName } = Astro.props;
 </style>
 
 <script>
-    const galleryImages = document.querySelectorAll('.gallery-image');
-    galleryImages.forEach(item => {
-        const index = item.dataset.imageGalleryDialogId;
-        const key = `#grid-${index}-dialog`
-        const dialog = document.querySelector(key)
-        if(!dialog) console.error('No dialog found for index ', index,)
-        item.addEventListener('click', () => {
-            dialog.showModal()
-        })
-    })
+    // const galleryImages = document.querySelectorAll('.gallery-image');
+    // galleryImages.forEach(item => {
+    //     const index = item.dataset.imageGalleryDialogId;
+    //     const dialog = document.querySelector(`#grid-${index}-dialog`)
+    //
+    //     if(!dialog) console.error('No dialog found for index ', index,)
+    //
+    //     item.addEventListener('click', () => {
+    //         dialog.showModal()
+    //     })
+    // })
 </script>
