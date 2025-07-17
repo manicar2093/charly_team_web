@@ -11,6 +11,7 @@ import { successStoriesSliceItems } from "../data/successStoriesImages";
 import { celebritySlidirImages } from "../data/celebritySliderImages";
 import { officialProducts } from "../data/officialProducts";
 import { officialClothes } from "../data/officialClothes";
+import GridPhotos from "../components/GridPhotos.astro";
 ---
 
 <Layout>
@@ -133,9 +134,8 @@ import { officialClothes } from "../data/officialClothes";
         onBlue="acompañan"
         paragraph="¡Siempre presentes!"
       />
-
       <div class="row">
-        <Slider items={celebritySlidirImages} sliceName="success-stories" />
+        <GridPhotos items={celebritySlidirImages} gridName="celebrity-gallery" />
       </div>
     </div>
   </section>

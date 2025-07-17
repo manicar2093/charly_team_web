@@ -1,4 +1,8 @@
-
+export interface SliceItem {
+    imgSrc: string;
+    imgAlt: string;
+    memberInfo: string
+}
 
 export const celebritySlidirImages = [
     {
