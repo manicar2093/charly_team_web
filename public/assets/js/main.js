@@ -158,25 +158,25 @@
    * Portfolio details slider
    */
 
-  new Swiper(".success-stories-slider", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 4500,
-      disableOnInteraction: false,
-    },
-    loop: true,
-  });
+  // new Swiper(".success-stories-slider", {
+  //   spaceBetween: 30,
+  //   centeredSlides: true,
+  //   autoplay: {
+  //     delay: 4500,
+  //     disableOnInteraction: false,
+  //   },
+  //   loop: true,
+  // });
 
-  new Swiper(".coach-picts-slider", {
-    spaceBetween: 30,
-    centeredSlides: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false,
-    },
-    loop: true,
-  })
+  // new Swiper(".coach-picts-slider", {
+  //   spaceBetween: 30,
+  //   centeredSlides: true,
+  //   autoplay: {
+  //     delay: 5000,
+  //     disableOnInteraction: false,
+  //   },
+  //   loop: true,
+  // })
 
   new Swiper(".official-products-slider", {
     spaceBetween: 30,
