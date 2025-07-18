@@ -5,146 +5,163 @@ import Slider from "../components/Slider.astro";
 import FAQ from "../components/FAQ.astro";
 import Layout from "../layouts/Layout.astro";
 
-import { services } from "../data/services";
-import { coachSliderItems } from "../data/coachImages";
-import { successStoriesSliceItems } from "../data/successStoriesImages";
-import { celebritySlidirImages } from "../data/celebritySliderImages";
-import { officialProducts } from "../data/officialProducts";
-import { officialClothes } from "../data/officialClothes";
+import {services} from "../data/services";
+import {successStoriesSliceItems} from "../data/successStoriesImages";
+import {celebritySlidirImages} from "../data/celebritySliderImages";
+import {officialProducts} from "../data/officialProducts";
+import {officialClothes} from "../data/officialClothes";
+import GridPhotos from "../components/GridPhotos.astro";
 ---
 
 <Layout>
-  <section id="services" class="services">
-    <div class="container">
-      <SectionTitle
-        title="Servicios"
-        subtitle="Iniciemos tu"
-        onBlue="CAMBIO"
-        paragraph="Todo lo necesario para lograr tu objetivo"
-      />
-      <div class="row">
-        {
-          services.map((item) => (
-            <Service
-              title={item.title}
-              icon={item.icon}
-              description={item.description}
+    <section id="success-stories" class="success-stories">
+        <div class="container">
+            <SectionTitle
+                    title="Historias de Éxito"
+                    subtitle="Muchos ya lo han"
+                    onBlue="Logrado"
+                    paragraph="¡Esfuerzate y lo lograras!"
             />
-          ))
-        }
-      </div>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="container">
-      <SectionTitle
-        title="Nosotros"
-        subtitle="Conoce a nuestro embajador"
-        onBlue="CHARLY CAMPOS"
-        paragraph="¡Él te llevará al éxito!"
-      />
-
-      <div class="row content">
-        <div class="col-lg-6">
-          <Slider items={coachSliderItems} sliceName="coach-picts" />
+            <div class="row row-cols-1 row-cols-md-2">
+                {
+                    successStoriesSliceItems.map((item) => (
+                            <div class="col d-flex align-items-stretch justify-content-center">
+                                <div class="member">
+                                    <div class="member-img">
+                                        <img src={item.imgSrc} class="img-fluid" alt={item.imgAlt}/>
+                                    </div>
+                                    {item.memberInfo && (
+                                            <div class="member-info">
+                                                <p>
+                                                    {item.memberInfo}
+                                                </p>
+                                            </div>
+                                    )}
+                                </div>
+                            </div>
+                    ))
+                }
+            </div>
         </div>
-        <div class="col-lg-6 pt-4 pt-lg-0 flex-p">
-          <p>
-            Al igual que tú yo <span class="fw-bold">amo mi vida</span> y <span
-              class="fw-bold">cuido mi salud</span
-            >. Me gusta el deporte y el estilo de vida en torno a él.
-          </p>
-          <p>
-            Desde que comenze este proyecto la <span class="fw-bold"
-              >actividad física</span
-            > y la <span class="fw-bold">buena alimentación</span> han sido mis motores
-            e inspiración para dar mis mejores pasos cada vez con mayor fuerza y
-            siempre apuntando al próximo reto. Me gusta encontrarme y convivir con
-            personas que tienen buenos deseos, pasión, entrega y que quieren darle
-            un cambio saludable a su vida, es por ello que yo, <span
-              class="fw-bold">tu amigo Charly Campos,</span
-            > te doy la más cordial bienvenida a <span class="fw-bold"
-              >la familia del #CharlyTeam</span
-            >.
-          </p>
-          <p class="fw-bold w-100 mb-1">
-            Entrenador y preparador físico para la salud
-          </p>
-          <p class="fw-bold">(CedProf 14610)</p>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <SectionTitle
+                    title="Nosotros"
+                    subtitle="Conoce a nuestro embajador"
+                    onBlue="CHARLY CAMPOS"
+                    paragraph="¡Juntos vamos al éxito!"
+            />
+
+            <div class="row content">
+                <div class="col-lg-6">
+                    <div class="member-img">
+                        <img src="assets/img/coach/coach_10.jpg" class="img-fluid" alt="embassador"/>
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 flex-p">
+                    <p>
+                        Al igual que tú yo <span class="fw-bold">amo mi vida</span> y <span
+                            class="fw-bold">cuido mi salud</span
+                    >. Me gusta el deporte y el estilo de vida en torno a él.
+                    </p>
+                    <p>
+                        Desde que comenze este proyecto la <span class="fw-bold"
+                    >actividad física</span
+                    > y la <span class="fw-bold">buena alimentación</span> han sido mis motores
+                        e inspiración para dar mis mejores pasos cada vez con mayor fuerza y
+                        siempre apuntando al próximo reto. Me gusta encontrarme y convivir con
+                        personas que tienen buenos deseos, pasión, entrega y que quieren darle
+                        un cambio saludable a su vida, es por ello que yo, <span
+                            class="fw-bold">tu amigo Charly Campos,</span
+                    > te doy la más cordial bienvenida a <span class="fw-bold"
+                    >la familia del #CharlyTeam</span
+                    >.
+                    </p>
+                    <p class="fw-bold w-100 mb-1">
+                        Entrenador y preparador físico para la salud
+                    </p>
+                    <p class="fw-bold">(CedProf 14610)</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="cta" class="cta">
-    <div class="container">
-      <div class="text-center">
-        <h3>Somos #CharlyTeam</h3>
-        <p class="fst-italic">
-          Somos un equipo que nos gusta la actividad física, la buena
-          alimentación y que no deja de luchar por alcanzar sus sueños. Podemos
-          caernos pero también sabemos levantarnos y vivir con pasión día a día.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="success-stories" class="success-stories">
-    <div class="container">
-      <SectionTitle
-        title="Historias de Éxito"
-        subtitle="Muchos ya lo han"
-        onBlue="Logrado"
-        paragraph="¡Esfuerzate y lo lograras!"
-      />
-
-      <div class="row">
-        <Slider items={successStoriesSliceItems} sliceName="success-stories" />
-      </div>
-    </div>
-  </section>
-
-  <section id="official-products" class="official-products">
-    <div class="container">
-      <SectionTitle
-        title="Productos #CharlyTeam"
-        subtitle="Nos expandemos para ofrecerte lo"
-        onBlue="Mejor"
-        paragraph="¡Los mejores suplementos, accesorios y ropa a tu alcance! ¡De venta en redes sociales!"
-      />
-
-      <div class="row">
-        <div class="col-12">
-          <Slider items={officialProducts} sliceName="official-products" />
+    <section id="services" class="services">
+        <div class="container">
+            <SectionTitle
+                    title="Servicios"
+                    subtitle="Iniciemos tu"
+                    onBlue="CAMBIO"
+                    paragraph="Todo lo necesario para lograr tu objetivo"
+            />
+            <div class="row">
+                {
+                    services.map((item) => (
+                            <Service
+                                    title={item.title}
+                                    icon={item.icon}
+                                    description={item.description}
+                            />
+                    ))
+                }
+            </div>
         </div>
-        <div class="col-12">
-          <Slider items={officialClothes} sliceName="official-products" />
+    </section>
+
+    <section id="official-products" class="official-products">
+        <div class="container">
+            <SectionTitle
+                    title="Productos #CharlyTeam"
+                    subtitle="Nos expandemos para ofrecerte lo"
+                    onBlue="Mejor"
+                    paragraph="¡Los mejores suplementos, accesorios y ropa a tu alcance! ¡De venta en redes sociales!"
+            />
+
+            <div class="row">
+                <div class="col-12">
+                    <Slider items={officialProducts} sliceName="official-products"/>
+                </div>
+                <div class="col-12">
+                    <Slider items={officialClothes} sliceName="official-products"/>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="celebrity-gallery" class="celebrity-gallery">
-    <div class="container">
-      <SectionTitle
-        title="Somos un equipo"
-        subtitle="Las celebridades que nos"
-        onBlue="acompañan"
-        paragraph="¡Siempre presentes!"
-      />
+    <section id="cta" class="cta">
+        <div class="container">
+            <div class="text-center">
+                <h3>Somos #CharlyTeam</h3>
+                <p class="fst-italic">
+                    Somos un equipo que nos gusta la actividad física, la buena
+                    alimentación y que no deja de luchar por alcanzar sus sueños. Podemos
+                    caernos pero también sabemos levantarnos y vivir con pasión día a día.
+                </p>
+            </div>
+        </div>
+    </section>
 
-      <div class="row">
-        <Slider items={celebritySlidirImages} sliceName="success-stories" />
-      </div>
-    </div>
-  </section>
+    <section id="celebrity-gallery" class="celebrity-gallery">
+        <div class="container">
+            <SectionTitle
+                    title="Somos un equipo"
+                    subtitle="Las celebridades que nos"
+                    onBlue="acompañan"
+                    paragraph="¡Siempre presentes!"
+            />
+            <div class="row">
+                <GridPhotos items={celebritySlidirImages} gridName="celebrity-gallery"/>
+            </div>
+        </div>
+    </section>
 
-  <section id="faq" class="faq">
-    <div class="container">
-      <SectionTitle title="F.A.Q" onBlue={null} subtitle="Preguntas Frecuentes" paragraph={null}/>
-      <FAQ />
-    </div>
-  </section>
+    <section id="faq" class="faq">
+        <div class="container">
+            <SectionTitle title="F.A.Q" onBlue={null} subtitle="Preguntas Frecuentes" paragraph={null}/>
+            <FAQ/>
+        </div>
+    </section>
 
 </Layout>
